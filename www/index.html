@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+       <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
+       <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+       <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <title>App Hibrida</title>
     </head>
     <body>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!-- pagina inicio  -->
+       <div id="inicio" data-role="page" data-theme="b">
+            <div data-role="header">
+                <h1>Mi primera APP</h1>
+             </div>
+             <div data-role="content" data-theme="b">
+             <a data-rel="dialog" href="#contacto" 
+             data-role="button">
+                contacto 
+                </a>
+             </div>
+              <div data-position="fixed" data-role="footer" data-theme="b">
+              	<div data-role="navbar">
+              	  <ul>
+              	  	<li><a data-transition="slideup" href="#mision" data-icon="grid">mision</a></li>
+              	  	<li><a data-transition="slidedown" href="#vision" data-icon="plus">vision</a></li>
+              	  	<li><a data-transition="flip" href="#aplicacion" data-icon="star">aplicacion</a></li>
+              	  	<li><a data-transition="pop" href="#inicio" data-icon="home">inicio</a></li>
+              	  </ul>
+
+              	</div>
+              </div>
+        </div>
+        <!-- pagina fin inicio  -->
+
+
+        <!-- pagina contacto  -->
+       <div id="contacto" data-role="page" data-theme="b">
+            <div data-role="header" data-theme="b">
+                <h1>informacion</h1>
+             </div>
+             <div data-role="content" data-theme="b">
+             <fieldset>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, tempora nemo optio, laudantium ex corrupti maxime, fugit eius suscipit molestiae fugiat officia consequuntur, exercitationem ab nihil aut quasi explicabo qui.</fieldset>
+
+             </div>
+              <div data-position="fixed" data-role="footer" data-theme="b">
+              	Celular: 3154524252 .:. melina@hotmail.com
+
+              </div>
+        </div>
+        <!-- pagina fin inicio  -->
+
+
+           <!-- pagina mision  -->
+       <div id="mision" data-role="page" data-theme="b">
+            <div data-role="header">
+                <h1>Mision</h1>
+             </div>
+             <div data-role="content" data-theme="b">
+                <div data-role="collapsible">
+                    <h3>Mision</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quo suscipit, cum rerum fugit, porro iure ab alias, temporibus, eaque perferendis omnis quidem dignissimos voluptate! Doloremque, error. Iusto omnis, nostrum.</p>
+                    </div>
+
+             </div>
+              <div data-position="fixed" data-role="footer" data-theme="b">
+              	<div data-role="navbar">
+              	  <ul>
+              	  	<li><a data-transition="slideup" href="#mision" data-icon="grid">mision</a></li>
+              	  	<li><a data-transition="slidedown" href="#vision" data-icon="plus">vision</a></li>
+              	  	<li><a data-transition="flip" href="#aplicacion" data-icon="star">aplicacion</a></li>
+              	  	<li><a data-transition="pop" href="#inicio" data-icon="home"></a>inicio</li>
+              	  </ul>
+
+              	</div>
+              </div>
+        </div>
+
+        <!-- pagina fin mision  -->
+
+
+
+
+                   <!-- pagina vision  -->
+       <div id="vision" data-role="page" data-theme="b">
+            <div data-role="header">
+                <h1>vision</h1>
+             </div>
+             <div data-role="content" data-theme="b">
+                <div data-role="collapsible">
+                <ul data-role="listview">
+                	<li><a href="">servicios1</a></li>
+                	<li><a href="">servicios2</a></li>
+                	<li><a href="">servicios3</a></li>
+                	<li><a href="">servicios4</a></li>
+                	<li><a href="">servicios5</a></li>
+                </ul>
+                    
+             </div>
+             </div>
+              <div data-position="fixed" data-role="footer" data-theme="b">
+              	<div data-role="navbar">
+              	  <ul>
+              	  	<li><a data-transition="slideup" href="#mision" data-icon="grid">mision</a></li>
+              	  	<li><a data-transition="slidedown" href="#vision" data-icon="plus">vision</a></li>
+              	  	<li><a data-transition="flip" href="#aplicacion" data-icon="star">aplicacion</a></li>
+              	  	<li><a data-transition="pop" href="#inicio" data-icon="home"></a>inicio</li>
+              	  </ul>
+
+              	</div>
+              </div>
+        </div>
+
+        <!-- pagina fin vision -->
+
+
+
+
+  <!-- pagina aplicacion  -->
+       <div id="aplicacion" data-role="page" data-theme="b">
+            <div data-role="header">
+                <h1>Aplicacion</h1>
+             </div>
+             <div data-role="content" data-theme="b">
+               <form id="miformulario">
+                    Nombre: <input type="text" name="nombre">
+                    correo: <input type="text" name="correo">
+                    Comentario: <input type="text" name="com">
+                    <input type="submit" value="enviar">
+                </form>
+                <div class="mensaje"></div>
+            
+                    
+             </div>
+              <div data-position="fixed" data-role="footer" data-theme="b">
+              	<div data-role="navbar">
+              	  <ul>
+              	  	<li><a data-transition="slideup" href="#mision" data-icon="grid">mision</a></li>
+              	  	<li><a data-transition="slidedown" href="#vision" data-icon="plus">vision</a></li>
+              	  	<li><a data-transition="flip" href="#aplicacion" data-icon="star">aplicacion</a></li>
+              	  	<li><a data-transition="pop" href="#inicio" data-icon="home"></a>inicio</li>
+              	  </ul>
+
+              	</div>
+              </div>
+        </div>
+
+        <!-- pagina fin aplicacion -->
+
+
+
+
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/funciones.js"></script>
     </body>
 </html>
